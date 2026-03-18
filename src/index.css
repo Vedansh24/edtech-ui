@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 99%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    /* Emerald + stone vibe */
+    --primary: 155 70% 33%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 22% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 22% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 155 50% 92%;
+    --accent-foreground: 155 70% 22%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 22% 91%;
+    --input: 214.3 22% 91%;
+    --ring: 155 70% 33%;
+
+    --radius: 12px;
+  }
+
+  .dark {
+    --background: 222.2 35% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 35% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 35% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 155 60% 40%;
+    --primary-foreground: 222.2 35% 7%;
+
+    --secondary: 217.2 20% 16%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 20% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 155 40% 18%;
+    --accent-foreground: 155 65% 72%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 20% 16%;
+    --input: 217.2 20% 16%;
+    --ring: 155 60% 40%;
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Apple Color Emoji', 'Segoe UI Emoji';
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
